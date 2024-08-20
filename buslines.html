@@ -1,70 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+    #body {background-color: lightblue;
+    }
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 2px solid #e4dada;
+  padding: 10px;
+}
+
+#customers tr:nth-child(even){background-color: #51ef02;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #31f301;
+  color: rgb(253, 253, 253);
+}
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 1;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0ef64c;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: rgb(232, 232, 232);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #3011df;}
+
+ul.topnav li a.active {background-color: #e1e1e0;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
-        <div class="container-fluid">
-           <a href="#" class="navbar-brand">Bus Operator List
-               <i class="fas fa-plane"></i>
-           </a>
-           <ul class="navbar-nav">
-               <li class="nav-item">
-                   <a href="city.html" class="nav-link active"><b>Home</b>
-                       <i class=" fas fa-solid fa-house"></i>
-                   </a>
-               </li>
-               <li class="nav-item">
-                   <a href="#" class="nav-link active"><b>Bus Operator
-                       
-                   </b>
-                       <i class="fas fa-earth-asia"></i>
-                   </a>
-               </li>
-           </ul>
-        </div>
-       </nav>
-       
-    <table class=" table table-bordered table-striped table-primary">
-        <tr>
-            <thead>
-            <th><i class="fas fa-plane-departure    ">Departure</i></th>
-            <th><i class="fas fa-plane-arrival    ">Arrival</i></th>
-            <th><i class="fas fa-times    ">Time</i></th>
-            <th>Coach Type</th>
-           <th>Price</th>
-        </tr>
-        </thead>
-        <tbody>
-        
-        <tr>
-            <td><i class="fas fa Bus">Bangkok(Mo Chit 2)</i></td>
-            <td>Chiang Mai Bus Terminal 3</td>
-            <td>06:00AM</td>
-            <td>P1</td>
-            <td>694THB</td>
-           
-        </tr>
+    <ul class="topnav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">Airlines</a></li>
+        <li><a href="#contact">Airports</a></li>
+        <li class="right"><a href="#about">About</a></li>
+      </ul>
+
+<table id="customers">
+    <tr>
+        <td><a href="nav.html">Navbar</a></td>
+        <td>MAI</td>
+       </tr>
         <tr>
             <td>CA</td>
             <td>Air China</td>
         </tr>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-     </tbody>
-     </table>
-  
+     
+        <tr>
+            <td>AI</td>
+            <td>Air India</td>
+        </tr>
+        <tr>
+            <td>NZ</td>
+            <td>Air New Zealand</td>
+        </tr>
+        <tr>
+            <td>PX</td>
+            <td>Air Niugini</td>
+        </tr>
+        <tr>
+            <td>I5</td>
+            <td>Air Asia India</td>
+        </tr>
+        <tr>
+            <td>NH</td>
+            <td>All Nippon Airways</td>
+        </tr>
+        
+        <tr>
+            <td>OZ</td>
+            <td>Asiana Airlines</td>
+        </tr>
+        <tr>
+            <td>QH</td>
+            <td>Bamboo Airways</td>
+        </tr>
+        <tr>
+            <td>PG</td>
+            <td>Bangkok Airways</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>Batik Air</td>
+        </tr>
+        <tr>
+            <td>BG</td>
+            <td>Biman Bangladesh</td>
+        </tr>
+        <tr>
+            <td>CX</td>
+            <td>Cathay Pacific Airways</td>
+        </tr>
+        <tr>
+            <td>5J</td>
+            <td>Cebu Pacific</td>
+        </tr>
+        <tr>
+            <td>CI</td>
+            <td>China Airlines</td>
+        </tr>
+        <tr>
+            <td>MU</td>
+            <td>China Eastern Airlines</td>
+        </tr>
+        <tr>
+            <td>CZ</td>
+            <td>China Southern Airlines</td>
+        </tr>
+        <tr>
+            <td>LY</td>
+            <td>El Al Israel Airlines</td>
+        </tr>
+        <tr>
+            <td>EK</td>
+            <td>
+                <a href="emirates.html">Emirates</a>
+            </td>
+        </tr>
+        <tr>
+            <td>EY</td>
+            <td>Etihad</td>
+        </tr>
+        <tr>
+            <td>BR</td>
+            <td>Eva Air</td>
+        </tr>
+        <tr>
+            <td>FZ</td>
+            <td>flydubai</td>
+        </tr>
+        <tr>
+            <td>GA</td>
+            <td>Garuda Indonesia</td>
+        </tr>
+        <tr>
+            <td>GF</td>
+            <td>Gulf Air</td>
+        </tr>
+        <tr>
+            <td>HU</td>
+            <td>Hainan Airlines</td>
+        </tr>
+        <tr>
+            <td>HX</td>
+            <td>Hong Kong Airlines</td>
+        </tr>
+        <tr>
+            <td>6E</td>
+            <td>Indigo</td>
+        </tr>
+        <tr>
+            <td>JL</td>
+            <td>Japan Airlines</td>
+        </tr>
+        <tr>
+            <td>7C</td>
+            <td>Jeju Air </td>
+        </tr>
+        <tr>
+            <td>3K</td>
+            <td>Jetstar Airways</td>
+        </tr>
+        <tr>
+            <td>LJ</td>
+            <td>Jin Air </td>
+        </tr>
+        <tr>
+            <td>KE</td>
+            <td>Korea Air </td>
+        </tr>
+        <tr>
+            <td>KU</td>
+            <td>Kuwait Airways </td>
+        </tr>
+        <tr>
+            <td>QV</td>
+            <td>Lao Airlines </td>
+        </tr>
       
+        <tr>
+            <td>MH</td>
+            <td>Malaysia Airlines </td>
+        </tr>
+        <tr>
+            <td>OD</td>
+            <td>Malindo Air </td>
+        </tr>
+        <tr>
+            <td>MO</td>
+            <td>MIAT Mongolian Airlines </td>
+        </tr>
+        <tr>
+            <td>8M</td>
+            <td>Myanmar Airways International </td>
+        </tr>
+        <tr>
+            <td>UB</td>
+            <td>Myanmar National Airlines </td>
+        </tr>
+        <tr>
+            <td>DD</td>
+            <td>Nok Air </td>
+        </tr>
+        <tr>
+            <td>WY</td>
+            <td>Oman Air </td>
+        </tr>
+        <tr>
+            <td>PK</td>
+            <td>Philippines Airlines</td>
+        </tr>
+        <tr>
+            <td>DD</td>
+            <td>PIA Pakistan International Airlines </td>
+        </tr>
+        <tr>
+            <td>QF</td>
+            <td>Qantas Airways </td>
+        </tr>
+        <tr>
+            <td>QR</td>
+            <td>Qatar Airways</td>
+        </tr>
+        <tr>
+            <td>BI</td>
+            <td>Royal Brunei Airlines </td>
+        </tr>
+        <tr>
+            <td>RJ</td>
+            <td>Royal Jordanian</td>
+        </tr>
+        <tr>
+            <td>SV</td>
+            <td>Saudi Arabia Airlines</td>
+        </tr>
+        <tr>
+            <td>7L</td>
+            <td>Silk Air </td>
+        </tr>
+        <tr>
+            <td>SQ</td>
+            <td>Singapore Airlines</td>
+        </tr>
+        <tr>
+            <td>SG</td>
+            <td>SpiceJet </td>
+        </tr>
+        <tr>
+            <td>UL</td>
+            <td>Srilankan Airlines </td>
+        </tr>
+        <tr>
+            <td>TW</td>
+            <td>T'way Air </td>
+        </tr>
+        <tr>
+            <td>TG</td>
+            <td>Thai Airways</td>
+        </tr>
+        <tr>
+            <td>VJ</td>
+            <td>VietJet Air</td>
+        </tr>
+        <tr>
+            <td>VN</td>
+            <td>Vietnam Airlines</td>
+        </tr>
+        <tr>
+            <td> K7</td>
+            <td>Air KBZ</td>
+        </tr>
+
+</table>
+
 </body>
-    </html>
+</html>
